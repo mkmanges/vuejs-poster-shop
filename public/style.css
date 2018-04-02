@@ -1,5 +1,7 @@
 :root {
-    --bg-color: red;
+    --bg-color: #6A5ACD;
+    --button-color: #6B8E23;
+    --shadow-color: #FFD700;
 }
 
 /* Generic styling */
@@ -13,7 +15,7 @@ button:focus, input:focus {
 }
 
 .btn {
-    background-color: var(--bg-color);
+    background-color: var(--button-color);
     border-radius: 2px;
     color: white;
     user-select: none;
@@ -27,7 +29,7 @@ button:focus, input:focus {
 }
 
 [v-cloak] {
-    display: none !important;
+    display: none !important; 
 }
 
 .fade-enter-active {
@@ -86,8 +88,8 @@ h1 {
     padding: 2rem 0 1rem;
     margin: 0;
     color: var(--bg-color);
-    letter-spacing: 1px;
-    text-shadow: black 2px 1px 1px;
+    letter-spacing: 3px;
+    text-shadow: var(--shadow-color) 2px 1px 1px;
 }
 
 .searchbar {
@@ -171,8 +173,10 @@ h1 {
 }
 
 .product .add-to-cart {
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
+  padding: 0;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 100;
 }
 
 #product-list-bottom {
