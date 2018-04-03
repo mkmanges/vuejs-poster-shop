@@ -1,5 +1,34 @@
 # Ultimate Vue.js Developers Course
 
+## MY CHANGES
+_I followed this tutorial but made a few changes to the code:_
+
+1. Wrote methods using ES6 syntax
+```js
+    // tutorial methods:
+    increase: function(item) {
+      item.qty++;
+      this.total += item.price;
+    },
+
+    // rewritten ES6 syntax: 
+    increase(item) {
+      item.qty++;
+      this.total += item.price;
+    },
+```
+2. Replaced `for` loops with `filter` functions
+```js
+    this.cart.filter((thing, index) => {
+      if (thing.id === item.id) {
+        this.cart[index].qty++;
+        found = true;
+      }
+    });
+```
+
+---
+
 Source code for the [Ultimate Vue.js Developers Course](http://bit.ly/2mPK8ny).
 
 ### Project 1: Vue.js Poster Shop
