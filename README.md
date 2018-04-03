@@ -17,7 +17,7 @@ _I followed this tutorial but made a few changes to the code:_
       this.total += item.price;
     },
 ```
-2. Replaced `for` loops with `filter` functions
+2. Replaced `for` loops with `filter` methods
 ```js
     this.cart.filter((thing, index) => {
       if (thing.id === item.id) {
